@@ -1,0 +1,28 @@
+
+.container{
+    /*background: #fff;*/
+    /*padding: 10px;*/
+    font-size: 11pt;
+}
+.section {
+  width: 100%;
+  /*display: flex;
+  flex-direction: row;
+  align-content: center;*/
+}
+
+.section textarea{
+  width: 100%;
+  background-color: #fff;
+  padding: 20rpx;
+}
+
+.section button{
+  width: 90%;
+  margin-top: 30rpx;
+  color:#fff;
+
+}
+.btn{
+    background-color:#42b3f4;
+}

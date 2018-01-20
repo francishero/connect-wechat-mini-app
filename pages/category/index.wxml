@@ -1,0 +1,20 @@
+<!--pages/category/index.wxml-->
+<view class="container">
+<text class="title">The posts you liked</text>
+<!-- do some conditional rendering here -->
+<view class="goods-container">
+        <view wx:if="{{favoritePosts.length}}">
+          <view class="goods-box" wx:for-items="{{favoritePosts}}" wx:key="{{index}}"
+         bindtap="toDetailsTap" data-id="{{item._id}}">
+           <view class="img-box">
+              <image src="{{item.pics[0]}}" class="image"/>
+           </view>
+           <view class="goods-title">{{item.title}}</view>
+           <view class="goods-price">¥ {{item.price}}</view>
+           
+        </view>
+        
+        </view>
+        <view  class="no-more-goods" wx:else>You have not liked any items yet</view>
+    </view>
+    </view>

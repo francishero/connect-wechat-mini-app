@@ -1,0 +1,87 @@
+<form bindsubmit="submitF" bindreset="formReset" class="form">
+  <view class="row-wrap">
+    <view class="label">Title:</view>
+    <view class="label-right">
+      <input name="inputTitle" class="input" placeholder="title for your product" value="{{title}}" bindchange="titleInput" required/>
+    </view>
+  </view>
+  <view class="row-wrap">
+    <view class="label">Category:</view>
+    <picker bindchange="bindPickerChange" value="{{categoryIndex}}" range="{{arrayCategories}}" mode="selector" class="width100">
+      <view class="picker-view">
+        <text>{{arrayCategories[categoryIndex]}}</text>
+        <view class="icon-box">
+          <image class="section_icon" src="../../images/select.png"></image>
+        </view>
+      </view>
+    </picker>
+  </view>
+  <view class="row-wrap">
+    <view class="label">Price: </view>
+    <view class="label-right">
+      <input name="inputPrice" class="input" type="number" 
+      placeholder="enter the price" value="{{price}}" bindchange="priceInput" />
+    </view>
+  </view>
+  <view class="row-wrap">
+    <view class="label">Description: </view>
+    <view class="label-right">
+      <input name="inputDescription" class="input" placeholder="simple description" value="{{description}}" bindchange="descriptionInput" />
+      <textarea  />
+    </view>
+  </view>
+<view class="action">
+  <text class="upload_text">Upload</text>
+<view class="action-photo">
+  
+        <block wx:for="{{files}}" wx:key="{{item}}" wx:index="{{index}}">
+            <image src="{{item}}"><icon type="cancel" data-index="{{index}}" 
+            color="red" size="18" class ="del" bindtap="delPic" /></image>
+        </block>
+            <text class="add" bindtap="bindCamera">{{actionText}}</text>
+        </view>
+
+</view>
+  
+  <!--
+  <view class="page section">
+    <view class="page__bd width100">
+      <view class="weui-cells">
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <view class="weui-uploader">
+              <view class="weui-uploader__hd">
+                <view class="weui-uploader__title">Upload</view>
+                <view class="weui-uploader__info">{{files.length}}/4</view>
+              </view>
+              <view class="weui-uploader__bd">
+                <view class="weui-uploader__files" id="uploaderFiles">
+                  <block wx:for="{{files}}" wx:key="*this">
+                    <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                   <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" >
+                      </image> 
+                    </view>
+                  </block>
+                </view>
+                <view class="weui-uploader__input-box">
+                  <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view> -->
+  <view class="row-wrap">
+    <view class="label">Tags: </view>
+    <view class="label-right">
+      <input name="tagsInput" class="input" placeholder="for search e.g #book" value="{{tags}}" />
+    </view>
+  </view>
+  <!--<view class="btn-area">
+    <button type="primary" formType="submit" bindtap="uploadImg">SEND IMG</button>
+  </view>-->
+<button  class="submit" formType="submit">SALE</button> 
+  
+</form>

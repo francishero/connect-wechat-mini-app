@@ -1,0 +1,11 @@
+<!--pages/qrcode-image/index.wxml-->
+<view class="container">
+<view class="title">
+  <view wx:if="{{wechatId}}">Wechat ID: {{wechatId}}</view>
+  <view wx:else>wechatId: Not Yet Set</view>
+<text>Long tap on the Qrcode to save it to your phone</text>
+</view>
+   <image src="{{qrcodeUrl}}" class="item" width="355" bindlongtap="imgLongTap" height="150"></image>
+   
+</view>
+

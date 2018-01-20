@@ -1,0 +1,9 @@
+<view class="container">
+
+<view class="section">
+  <form bindsubmit="bindFormSubmit">
+    <textarea  placeholder="send us a suggestion to help improve the app " name="textarea" value="{{inputVal}}" autofocus placeholder-style="color:black,font-size:10px" cursor-spacing="50" />
+    <button  form-type="submit" class="btn"> Send </button>
+  </form>
+</view>
+</view>

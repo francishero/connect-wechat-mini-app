@@ -1,0 +1,42 @@
+
+<view class="container">
+<view class="header">
+<view class="black-cover"></view>
+<image class="logo" src="../../images/logo.png"></image>
+</view>
+<view class="version">
+<view class="version-title">Connect</view>
+<view class="versin-text">{{version}}</view>
+</view>
+
+<view class="about">
+	<view class="about-item">
+		<text class="about-item-title">Connect project</text>
+		<text class="desc-content">Do you post the things you are selling in so many wechat groups? 
+			If so this project will help you reach everyone even without adding so many groups.
+			The idea is to connect you to the people who want your second hand stuff or any stuff for that matter.
+		</text>
+	</view>
+	<view class="about-item">
+		<text class="about-item-title">Developers</text>
+		<text class="desc-content">Am a software developer,if you like the app you can add my wechat
+			and buy me coffee :)
+			Or check out my github profile. You feel like its a good idea and wanna help? Add my wechat 
+		</text>
+		<text class="about-item-content link">https://github.com/francishero</text>
+		<text class="about-item-content link">wechat: baheroh</text>
+	</view>
+	<view class="about-item">
+		<text class="about-item-title">Project version</text>
+		<text class="about-item-content ">v1.0 (Mvp)</text>
+	</view>
+</view>
+<view class="footer">
+    <view class="footer-nuist">
+        <image src="../../images/logo.png"></image>
+        <text>Connect</text>
+    </view>
+    <text  class="nuist-text">Nanjing university of information science</text>
+    <text class="nuist-text">Copyright @ {{year}} All Rights Reserved</text>
+  </view>
+</view>

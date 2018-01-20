@@ -1,0 +1,19 @@
+<!--pages/qrcode/index.wxml-->
+<view class="action">
+  <view class="label">Upload your wechat qrcode so others can connect with you</view>
+  <view class="label-right">
+    <input name="idInput" bindinput="bindInput" class="input" placeholder="wechat_id" value="{{wechatId}}" />
+  </view>
+  <view class="action-photo">
+    <block wx:for="{{picUrls}}" wx:key="{{item}}" wx:index="{{index}}">
+      <image src="{{item}}">
+        <icon type="cancel" data-index="{{index}}" color="red" size="18" class="del" bindtap="delPic" />
+      </image>
+    </block>
+    <text class="add" bindtap="bindCamera">{{actionText}}</text>
+  </view>
+</view>
+
+<view class="action-submit">
+    <button class="submit-btn" type="default" loading="{{loading}}" bindtap="formSubmit" style="background-color: {{btnBgc}}">SEND</button>
+</view>

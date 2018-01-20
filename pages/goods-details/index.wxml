@@ -1,0 +1,53 @@
+<!--pages/goods-details/index.wxml-->
+
+<view class="container">
+  <view class="swiper-container">
+    <swiper class="swiper_box" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+      <block wx:for="{{goodsDetails.pics}}" wx:key="unique">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <!-- the dots -->
+    <view class="dots">
+      <block wx:for="{{goodsDetails.pics}}" wx:key="item">
+        <view class="dot{{index==swiperCurrent ? 'active': ''}}"></view>
+      </block>
+    </view>
+  </view>
+
+  <!-- goods info -->
+  <view class="goods-info items_shadow">
+    <view class="goods-title">{{goodsDetails.title}}</view>
+    <view class="goods-price">￥{{goodsDetails.price}}</view>
+  </view>
+
+  <!-- display goods description -->
+  <view class="goods-desc-info">
+    <view class="label-title">Product Description</view>
+    <image src="/images/arrow-yellow.png" class="arrow-yellow"></image>
+    <view class="goods-text">{{goodsDetails.description}}</view>
+  </view>
+
+  <!-- footer for wechat and phone call -->
+  <view class="footer-box">
+    <!-- <view class="join-shop-cart" bindtap="share">Share</view> -->
+    <view class="like">
+      <button class="goods-like" bindtap="favoritePost">
+        <image wx:if="{{!liked}}" class="like-icon" src="/images/heart.png"></image>
+        <image wx:if="{{liked}}" class="like-icon" src="/images/heart-active.png"></image>
+      </button>
+      <view class="goods-favcount">{{count}} </view>
+    </view>
+    <view class="join-shop-cart" bindtap="share">
+      <image src="/images/share.png" class="share-icon"></image>
+      <button id="btn" open-type="share">Share</button>
+    </view>
+    <view class="now-buy" bindtap="addWechat">
+    <image src="/images/wechat.png" class="wechat-icon"></image>
+      Add Wechat
+    </view>
+  </view>
+</view>

@@ -1,0 +1,47 @@
+/* pages/qrcode-image/index.wxss */
+.container{
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: center; 
+ margin-left:0 auto;
+ 
+}
+.item{
+  background: #ddd;
+  height:350px;
+  width:80%;
+  margin: 10px;
+  border:2px solid white;
+ /* position: relative;
+	cursor: pointer;
+    border-radius: 5px;
+    -webkit-transition: 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+	-moz-transition:  0.3s ease-in-out, 
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out, */
+    
+}
+.item1:hover {
+	transform: scale(1.05); 
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.50), 
+      rgba(0, 0, 0, 0.10)
+    )
+}
+.title{
+  color:#222;
+  font-size:30rpx;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2em;
+  padding: 20rpx;
+
+}
+.wechat_id{
+  color:#222;
+  font-size:26rpx;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}

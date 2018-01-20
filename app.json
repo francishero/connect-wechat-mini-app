@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/my/index",
+    "pages/suggestions/index",
+    "pages/upload/index",
+    "pages/goods-details/index",
+    "pages/address-add/index",
+    "pages/select-address/index",
+    "pages/about/index",
+    "pages/search/index",
+    "pages/category/index",
+    "pages/qrcode/index",
+    "pages/qrcode-image/index"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#42b3f4",
+    "navigationBarTitleText": "Connect",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#f9f027",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home-icon-1.png",
+        "selectedIconPath": "images/home-icon-2.png",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/upload/index",
+        "iconPath": "images/upload-icon-1.png",
+        "selectedIconPath": "images/upload-icon-2.png",
+        "text": "Upload"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "iconPath": "images/my-icon-1.png",
+        "selectedIconPath": "images/my-icon-2.png",
+        "text": "Me"
+      }
+    ]
+  }
+}

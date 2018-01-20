@@ -1,0 +1,140 @@
+/* pages/upload/index.wxss */
+page{
+  background: #fff;
+  font-family: SimHei;
+}
+
+
+.form{
+  background:#fff;
+  display:block;
+  margin-top:20rpx;
+}
+
+.section{
+    display: flex;
+    margin: 15px;
+}
+.section__title{
+/*    margin-bottom: 16rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx; */
+    width:200px;
+    padding: 15rpx;
+    font-size: 14px;
+}
+.btn-area{
+
+width:100%;
+bottom: 0;
+border-radius: 50%;
+}
+
+.section_icon{
+    width:20rpx;
+    height: 30rpx;
+    align-items: center;
+}
+.picker-view {
+    min-width: 20rpx;
+    height: 100%;
+    margin-right: 20rpx;
+    position: relative;
+}
+.row-wrap{
+    width: 720rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+    margin-left: 30rpx;
+    border-bottom: 1rpx solid #eee;
+    display: flex;
+    font-size: 28rpx;
+    /*justify-content: space-between;*/
+}
+
+.row-wrap .label{
+    width: 160rpx;
+    color: #000
+}
+.row-wrap .label-right{
+    flex: 1;
+    height: 88rpx;
+    line-height: 88rpx;
+}
+.row-wrap .label-right input{
+    height: 100%;
+    font-size: 28rpx;
+    padding-right: 30rpx;
+}
+
+.row-wrap .label-right textarea{
+  height: 100%;
+}
+
+.width100{
+  width: 100%;
+}
+
+.submit{
+  margin: 20rpx;
+}
+
+.icon-box{
+  position:absolute;
+  right:20rpx;
+}
+.submit-btn{
+  background-color:#42b3f4;
+}
+.del{
+	display: block;
+	position: absolute;
+	top: 30rpx;
+	right: 200rpx;
+}
+.submit{
+    background-color: #42b3f4;
+    color:#fff;
+    margin-top:54rpx;
+
+}
+
+/*new */
+.action .action-photo{
+	background-color: #fff;
+	padding: 40rpx 0px 40rpx 50rpx;
+}
+.action .action-photo image{
+	position: relative;
+	display: inline-block;
+	width: 120rpx;
+	height: 120rpx;
+	overflow: visible;
+	margin-left: 25rpx;
+}
+.action .action-photo image icon.del{
+	display: block;
+	position: absolute;
+	top: -20rpx;
+	right: -20rpx;
+}
+.action .action-photo text.add{
+	display: inline-block;
+	width: 120rpx;
+	height: 120rpx;
+	line-height: 120rpx;
+	text-align: center;
+	font-size: 24rpx;
+	color: #ccc;
+	border: 2rpx dotted #ccc;
+	margin-left: 25rpx;
+	vertical-align: top;
+}
+.upload_text{
+    margin-top:15px;
+    font-size: 28rpx;
+    margin-left: 30rpx;
+}
+.row-wrap .label-right{
+  padding-left: 20rpx; 
+}

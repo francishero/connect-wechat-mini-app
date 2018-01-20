@@ -1,0 +1,59 @@
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+            <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+            <input type="text" class="weui-search-bar__input" placeholder="search" 
+            value="{{ inputVal }}"   bindinput="inputTyping"   bindconfirm="redirectToUser" />
+            <view class="weui-icon-clear" bindtap="clearInput">
+                <icon type="clear" size="14"></icon>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="weui-cells searchbar-result" wx:if="{{ !!inputVal && !!items.length }}">
+    <navigator url="" class="weui-cell" hover-class="weui-cell_active" wx:for="{{ items }}" wx:key="" bindtap="redirectTo" data-items="{{ items }}">
+     <!--   <view class="weui-cell__bd">{{ item._id }}</view>
+        <view class="weui-cell__ft"> {{ item.num }} results</view>
+        -->
+    </navigator>
+</view>
+<view class="container">
+   <view class="swiper-container">
+        <swiper class="swiper_box" 
+                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+            <block wx:for="{{banners}}" wx:key="unique">
+                <swiper-item>
+                    <image bindtap="tapBanner" data-id="{{item.businessId}}" src="{{item.picUrl}}" class="slide-image" width="750rpx" height="562.5rpx"/>
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="dots">  
+            <block wx:for="{{banners}}" wx:key="unique">  
+                <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>  
+            </block>  
+        </view>  
+   </view>
+   
+    <view class="type-container">
+        <scroll-view class="type-navbar" scroll-x="true" style="width: 100%">
+            <view class="type-box" wx:for-items="{{categories}}" wx:key="unique">
+                <view id="{{item.id}}" class="type-navbar-item {{activeCategoryId == item.id ? 'type-item-on' : ''}}" bindtap="tabClick">
+                    {{item.name}}
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="goods-container">
+        <view class="goods-box" wx:for-items="{{goods}}" wx:key="{{index}}"
+         bindtap="toDetailsTap" data-id="{{item._id}}">
+           <view class="img-box">
+              <image src="{{item.pics[0]}}" class="image"/>
+           </view>
+           <view class="goods-title">{{item.title}}</view>
+           <view class="goods-price">¥ {{item.price}}</view>
+           
+        </view>
+    </view>
+    <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">no more goods</view>
+</view>

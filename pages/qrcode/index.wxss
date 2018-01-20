@@ -1,0 +1,73 @@
+/* pages/qrcode/index.wxss */
+.action .action-photo{
+	background-color: #fff;
+	padding: 40rpx 0px 40rpx 50rpx;
+}
+.action .action-photo image{
+	position: relative;
+	display: inline-block;
+	width: 120rpx;
+	height: 120rpx;
+	overflow: visible;
+	margin-left: 25rpx;
+}
+.action .action-photo image icon.del{
+	display: block;
+	position: absolute;
+	top: -20rpx;
+	right: -20rpx;
+}
+.action .action-photo text.add{
+	display: inline-block;
+	width: 120rpx;
+	height: 120rpx;
+	line-height: 120rpx;
+	text-align: center;
+	font-size: 24rpx;
+	color: #ccc;
+	border: 2rpx dotted #ccc;
+	margin-left: 25rpx;
+	vertical-align: top;
+}
+.action .action-submit{
+	padding: 40rpx 40rpx;
+	background-color: #f2f2f2;
+}
+.title{
+  box-sizing: border-box;
+  padding: 0 35rpx;
+  font-size: 24rpx;
+  line-height: 1.4;
+  color: #000;
+  margin-bottom: 28rpx;
+}
+
+ .label-right{
+    flex: 1;
+    height: 88rpx;
+    line-height: 88rpx;
+}
+ .label-right input{
+    height: 50%;
+		width: 80%;
+	/*	border: 1px solid grey; */
+		text-align: center;
+		color: #222;
+		background-color: #fff;
+     font-size: 28rpx;
+   /* padding-right: 30rpx; */
+   padding: 30rpx;
+}
+
+.label-right {
+  height: 50%;
+   margin:10px auto;
+    max-width: 400px;
+    padding: 20px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.label{
+	margin:30rpx;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30rpx;
+}

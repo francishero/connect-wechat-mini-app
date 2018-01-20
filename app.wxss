@@ -1,0 +1,28 @@
+/**app.wxss**/
+@import 'common/style/weui.wxss';
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100rpx 0;
+  box-sizing: border-box;
+} 
+
+page {
+  background: #f2f2f2;
+  font-family:SimHei;
+}
+
+.block_shadow{
+  box-shadow: 0 2px 4px 0 rgba(112, 123, 142, 0.57);
+}
+
+.items_shadow{
+  box-shadow:0 2px 4px 0 rgba(146, 146, 146, 0.19);
+}
+
+.radius{
+  border-radius: 6rpx;
+}

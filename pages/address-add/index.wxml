@@ -1,0 +1,52 @@
+<view class="container">
+    <form bindsubmit="bindSave">
+    <view class="form-box">
+        <view class="row-wrap">
+            <view class="label">username</view>
+            <view class="label-right">
+                <input name="linkMan" class="input" type="text" placeholder="name" value="{{addressData.linkMan}}"/>
+            </view>
+        </view>
+        <view class="row-wrap">
+            <view class="label">phone</view>
+            <view class="label-right">
+                <input name="mobile" class="input" maxlength="11" type="number" placeholder="11 digit" value="{{addressData.mobile}}"/>
+            </view>
+        </view>
+        <view class="row-wrap" bindtap="selectCity">
+            <view class="label">Choose area</view>
+            <picker bindchange="bindPickerProvinceChange" range="{{provinces}}">
+              <view class="picker {{selProvince=='Choose'?'hui':''}}">
+                {{selProvince}}
+              </view>
+            </picker>
+            <picker bindchange="bindPickerCityChange" range="{{citys}}">
+              <view class="picker {{selCity=='Choose'?'hui':''}}">
+                {{selCity}}
+              </view>
+            </picker>
+            <picker bindchange="bindPickerChange" range="{{districts}}">
+              <view class="picker {{selDistrict=='Choose'?'hui':''}}">
+                {{selDistrict}}
+              </view>
+            </picker>
+        </view>
+        <view class="addr-details">
+            <view class="label"></view>
+            <view class="label-right">
+                <!--<input class="input" type="text" placeholder="街道门牌信息"/>-->
+                <textarea name="address" auto-height placeholder="address"  value="{{addressData.address}}"/>
+            </view>
+        </view>
+        <view class="row-wrap">
+            <view class="label">zip code</view>
+            <view class="label-right">
+                <input name="code" class="input" type="text" value="{{addressData.code}}"/>
+            </view>
+        </view>
+    </view>
+    <button type="warn" class="save-btn" formType="submit">Save</button>
+    <button type="default" class="save-btn" bindtap="deleteAddress" data-id="{{addressData.id}}" wx:if="{{addressData}}">删除该地址</button>
+    <button type="default" class="cancel-btn" bindtap="bindCancel">cancel</button>
+    </form>
+</view>

@@ -1,0 +1,124 @@
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  padding: 50rpx 0;
+  align-items: center;
+  width: 100%;
+  /*background: #479de6;*/
+}
+
+.container {
+  background: #fff;
+  margin-bottom: 3%;
+  min-height: 1000rpx;
+  box-shadow: 0 2px 4px 0 rgba(112, 123, 142, 0.57);
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: black;
+}
+
+.badge {
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  background: #f00;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 8px;
+}
+
+.logout {
+  position: relative;
+  margin-top: 1.17647059em;
+  line-height: 1.41176471;
+  font-size: 17px;
+  padding: 10px 15px;
+  background: #fff;
+  text-align: center;
+}
+
+.logout:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+}
+
+.logout:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+}
+
+.info_list {
+  width: 100%;
+}
+
+.weui-cell::before {
+  left: 0;
+}
+
+.Stared_Sell {
+  width: 60%;
+  margin: 10rpx auto;
+  position: relative;
+}
+
+.sell, .stared {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+}
+
+.sell {
+  border-right: 1px solid #d9d9d9;
+}
+
+.navs {
+  display: block;
+  width: 25%;
+  margin:30rpx auto 0;
+
+}
+
+.nav-item {
+  padding:6%;
+
+}
+
+.nav-item .nav-image {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+
+.nav-item text {
+  padding-top: 20rpx;
+  font-size: 30rpx;
+  position: relative;
+  top: -15rpx;
+  left: 10rpx;
+}
+
+.custom {
+  font-size: 24rpx;
+  padding: 24rpx 0 0rpx 0;
+}

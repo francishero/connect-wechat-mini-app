@@ -25,10 +25,10 @@ You must atleast have wechat devtools installed
 ![](./images/home-page.jpg)
 
 ![](./images/single-product.jpg)
-![](./images/upload-page.jpg)
+![](./images/upload-page.png)
 
-![](./images/suggestion-page.jpg)
-![](./images/qrcode-page.jpg)
+![](./images/suggestion-page.png)
+![](./images/qrcode-page.png)
 
 ![](./images/about-page.jpg)
 ![](./images/add-wechat.jpg)
